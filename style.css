@@ -1,0 +1,70 @@
+body {
+    background-color: rgb(71, 18, 62);
+}
+/* Pagina Bienvenida */
+.Bienvenida {
+    text-align: center;
+    background-color: rgb(70, 24, 114);
+    border-radius: 20px;
+}
+
+.Bienvenida h1 {
+    color: antiquewhite;
+    font-style: italic;
+}
+
+.Bienvenida h5 {
+    color: rgb(219, 171, 11);
+    margin-bottom: 10px;
+}
+
+.Bienvenida img {
+    width: 300px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 4px 4px rgb(39, 20, 20);
+
+}
+
+.Bienvenida .btn {
+    transition: 0.4s;
+    padding: 10px 15px;
+    font-weight: bold;
+
+}
+
+.Bienvenida .btn:hover {
+    background-color: rgb(100, 100, 226);
+}
+
+/* Pagina index */
+
+nav .nav-link {
+  transition: 0.3s;
+  border-radius: 8px;
+  margin:5px 3px;
+}
+
+nav .nav-link:hover {
+  background-color: #ffa500;
+  color: black !important;
+  transform: scale(1.05);
+}
+
+img {
+  transition: transform 0.3s;
+  width: 300px;
+}
+
+img:hover {
+  transform: scale(1.05);
+}
+
+.btn-warning {
+  font-weight: bold;
+  transition: 0,3;
+}
+
+.btn-warning:hover {
+  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
