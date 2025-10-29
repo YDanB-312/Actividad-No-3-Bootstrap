@@ -1,41 +1,91 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-        />
-        <link rel="stylesheet" href="style.css" />
-        <title>Día de las Brujas</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="styles.css">
+        <title>Document</title>
     </head>
     <body>
-        <div class="d-flex">
-
-            <!-- Menú lateral -->
-            <nav class="bg-black p-3">
-                <h3 class="text-warning text-center">Dia de Brujas</h3>
-                <ul class="nav flex-column text-center">
-                    <li><a href="index.html" class="nav-link text-warning">Inicio</a></li>
-                    <li><a href="galeria.html" class="nav-link text-white">Galería</a></li>
-                    <li><a href="historia.html" class="nav-link text-white">Historia</a></li>
-                    <li><a href="contacto.html" class="nav-link text-white">Contacto</a></li></ul>
-            </nav>
-
-            <main class="flex-grow-1 p-4 text-center">
-                <section class="p-5 bg-light text-dark rounded-4">
-                    <h1 class="fw-bold">¡Bienvenido al sitio de Halloween!</h1>
-                    <p>Explora el mundo misterioso y divertido del Día de las Brujas.</p>
-                    <img src="Imagenes/Dia de brujas.jpg" alt="Imagen dia de brujas" class="rounded shadow my-3"/>
-                    <a href="galeria.html" class="btn btn-warning btn-lg mt-2">Ver Galería</a>
-                </section>
-
-                <footer class="mt-5 p-3 bg-black text-center text-light rounded">
-                    <p>&copy; Sitio de Dia de Brujas</p>
-                </footer>
-            </main>
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Menú lateral -->
+                <div class="col-md-3 menu-lateral">
+                    <h3>Menú</h3>
+                    <a href="index.html">Inicio</a>
+                    <a href="galeria.html">Galería</a>
+                    <a href="historia.html">Historia</a>
+                    <a href="contacto.html">Contacto</a>
+                </div>
+                
+                <!-- Contenido principal -->
+                <div class="col-md-9 contenido text_center p-4">
+                <!-- Título en un div para imagen de fondo -->
+                <div class="titulo-con-fondo">
+                    <h1>Bienvenidos al Día de las Brujas</h1>
+                </div>
+                
+                <!-- Introducción en un div -->
+                <div class="introduccion text-area">
+                    <h3>¿Qué es Halloween?</h3>
+                    <p>Halloween, también conocido como Día de las Brujas, es una celebración moderna que tiene sus raíces en tradiciones antiguas. Se celebra cada año el 31 de octubre, principalmente en países anglosajones como Estados Unidos, Canadá, Irlanda y Reino Unido, aunque su popularidad se ha extendido por todo el mundo.</p>
+                    
+                    <p>La festividad combina elementos de la tradición celta del Samhain, que marcaba el final del verano y el comienzo del invierno, con influencias cristianas del Día de Todos los Santos. Durante esta noche, se cree que el velo entre el mundo de los vivos y el de los muertos es más delgado, permitiendo que los espíritus caminen entre nosotros.</p>
+                    
+                    <p>Hoy en día, Halloween es una celebración llena de diversión, disfraces, dulces y decoraciones espeluznantes que encanta tanto a niños como a adultos.</p>
+                </div>
+                
+                <!-- Tarjetas -->
+                <div class="row mt-4 text-center">
+                    <!-- Tarjeta 1 -->
+                    <div class="col-md-4">
+                        <div class="tarjeta">
+                            <img src="imagenes/dulce o truco.jpg" alt="Dulces de Halloween">
+                            <div class="p-3">
+                                <h4>Truco o Trato</h4>
+                                <p>Los niños visitan casas pidiendo dulces con la famosa frase "truco o trato". Es una de las tradiciones más populares donde los pequeños se disfrazan y recorren el vecindario recolectando golosinas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tarjeta 2 -->
+                    <div class="col-md-4">
+                        <div class="tarjeta">
+                            <img src="imagenes/calabazas talladas.jpg" alt="Calabaza tallada">
+                            <div class="p-3">
+                                <h4>Calabazas Talladas</h4>
+                                <p>Se tallan calabazas con caras terroríficas conocidas como "jack-o'-lanterns" y se colocan velas en su interior. Esta tradición proviene de una leyenda irlandesa sobre Jack el Tacaño.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tarjeta 3 -->
+                    <div class="col-md-4">
+                        <div class="tarjeta">
+                            <img src="imagenes/disfraces.jpg" alt="Disfraces">
+                            <div class="p-3">
+                                <h4>Disfraces</h4>
+                                <p>Personas de todas las edades se disfrazan de personajes de terror, monstruos, superhéroes o figuras populares. Los disfraces son una parte fundamental de la celebración.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+        
+        <!-- Footer -->
+        <div class="row">
+            <div class="col-12 pie-pagina text-center">
+                <p>&copy;Sitio Dia De Brujas - ADSO</p>
+                <p>
+                    <a href="">Política de Privacidad</a> | 
+                    <a href="">Términos de Uso</a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
